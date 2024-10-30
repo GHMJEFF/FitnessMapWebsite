@@ -5,7 +5,11 @@ body {
             padding: 0;
         }
 
-
+            .image-container {
+            
+              text-align: center;
+            
+            }
         header {
             display: flex;
             align-items: center;
