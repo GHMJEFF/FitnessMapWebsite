@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitnessMap: Leave A Review</title>
+    <script>
+        // JavaScript for form validation
+        function validateForm() {
+            const email = document.getElementById("email").value;
+            const review = document.getElementById("review").value;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // Check if email is valid
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Check if review is not empty
+            if (review.trim() === "") {
+                alert("Please leave a review.");
+                return false;
+            }
+
+            // If all conditions are met, form can be submitted
+            return true;
+        }
+    </script>
 </head>
 <body>
     <header>
-        
         <nav>
             <ul>
                 <li><a href="UpperBody.html">Upper Body</a></li>
@@ -27,7 +49,7 @@
 
     <section id="form">
         <h2>Leave A Review</h2>
-        <form action="/submit-review" method="POST">
+        <form action="/submit-review" method="POST" onsubmit="return validateForm()">
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
             
