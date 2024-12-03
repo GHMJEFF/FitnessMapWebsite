@@ -1,52 +1,76 @@
 body {
-            
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px; /* Adds padding around the entire page for breathing room */
+}
 
-            .image-container {
-            
-              text-align: center;
-            
-            }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            background-color: #009999;
-            
-        }
+.image-container {
+    text-align: center;
+    margin: 20px 0; /* Adds vertical spacing around the image container */
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding for a more spacious header */
+    background-color: #009999;
+    margin-bottom: 30px; /* Adds space below the header */
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for better alignment */
+    gap: 15px; /* Space between navigation items */
+}
 
-        .workout-section {
-            padding: 20px;
-        }
+nav ul li {
+    display: inline;
+}
 
-        .workout-section img {
-            margin: 10px 0;
-            display: block;
-            max-width: 100%; /* Responsive images */
-            height: auto;
-        }
+.workout-section {
+    padding: 20px;
+    margin-bottom: 40px; /* Space between workout sections */
+    background-color: #f9f9f9; /* Subtle background color for separation */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
 
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+.workout-section img {
+    margin: 20px 0; /* Adds space above and below images */
+    display: block;
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border-radius: 5px; /* Optional: Adds rounded corners to images */
+}
 
-        .float-right {
-            float: right;
-            margin-left: 10px;
-        }
+.workout-section p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.workout-section h3 {
+    margin-bottom: 15px; /* Space below subheadings */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-right {
+    float: right;
+    margin-left: 15px; /* Space between floated image and content */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #009999;
+    color: #fff;
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top of the footer */
+}
+
