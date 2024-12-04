@@ -21,9 +21,11 @@ nav ul {
 
 nav ul li {
     margin: 0;
-    color: white; 
-    text-decoration: none;
 }
+nav ul li a {
+            color: white; 
+            text-decoration: none; 
+        }
 
 .workout-section {
     margin-bottom: 30px; /* Adds space between workout sections */
