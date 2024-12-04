@@ -23,18 +23,13 @@ nav ul li {
     margin: 0;
 }
 
-section {
-    padding: 40px 20px; /* Adds space around sections */
-    margin-bottom: 30px; /* Adds space between sections */
-}
-
 .workout-section {
-    margin-bottom: 50px; /* Increases space between workout sections */
-    padding: 25px;
+    margin-bottom: 30px; /* Adds space between workout sections */
+    padding: 20px;
 }
 
 .workout-section img {
-    margin: 20px 0;
+    margin: 15px 0;
     display: block;
     max-width: 100%;
     height: auto;
@@ -42,12 +37,12 @@ section {
 
 .float-right {
     float: right;
-    margin-left: 20px; /* Adds space between image and text */
+    margin-left: 15px; /* Adds space between image and text */
 }
 
 .float-left {
     float: left;
-    margin-right: 20px; /* Adds space between image and text */
+    margin-right: 15px; /* Adds space between image and text */
 }
 
 .text-right {
@@ -58,28 +53,40 @@ section {
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .workout-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
 footer {
     text-align: center;
-    padding: 30px; /* Increases padding for a larger footer */
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
 footer img {
-    margin: 0 15px; /* Increases spacing between footer icons */
+    margin: 0 10px;
 }
 
 footer p {
-    margin: 15px 0; /* Adds extra spacing between footer text elements */
+    margin: 10px 0;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 20px; /* Adds more space between nav links on small screens */
-    }
-    .workout-section {
-        padding: 20px;
-        margin-bottom: 30px;
-    }
+/* Ensure enough space for the body content to avoid overlap with the footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the height of the body to fill the viewport */
+}
+
+main {
+    flex: 1; /* Makes the main content stretch to fill available space */
+    padding-bottom: 50px; /* Adds extra space at the bottom for the footer */
 }
 
