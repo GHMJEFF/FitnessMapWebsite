@@ -23,13 +23,18 @@ nav ul li {
     margin: 0;
 }
 
+section {
+    padding: 40px 20px; /* Adds space around sections */
+    margin-bottom: 30px; /* Adds space between sections */
+}
+
 .workout-section {
-    margin-bottom: 30px; /* Adds space between workout sections */
-    padding: 20px;
+    margin-bottom: 50px; /* Increases space between workout sections */
+    padding: 25px;
 }
 
 .workout-section img {
-    margin: 15px 0;
+    margin: 20px 0;
     display: block;
     max-width: 100%;
     height: auto;
@@ -37,12 +42,12 @@ nav ul li {
 
 .float-right {
     float: right;
-    margin-left: 15px; /* Adds space between image and text */
+    margin-left: 20px; /* Adds space between image and text */
 }
 
 .float-left {
     float: left;
-    margin-right: 15px; /* Adds space between image and text */
+    margin-right: 20px; /* Adds space between image and text */
 }
 
 .text-right {
@@ -53,26 +58,28 @@ nav ul li {
     text-align: left;
 }
 
+footer {
+    text-align: center;
+    padding: 30px; /* Increases padding for a larger footer */
+    background-color: #f4f4f4;
+}
+
+footer img {
+    margin: 0 15px; /* Increases spacing between footer icons */
+}
+
+footer p {
+    margin: 15px 0; /* Adds extra spacing between footer text elements */
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px; /* Adds more space between nav links on small screens */
     }
     .workout-section {
-        padding: 15px;
-        margin-bottom: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
     }
-}
-footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        footer img {
-            margin: 0 10px;
-        }
-        footer p {
-            margin: 10px 0;
-        }
 }
 
