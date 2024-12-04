@@ -21,6 +21,8 @@ nav ul {
 
 nav ul li {
     margin: 0;
+    color: white; 
+    text-decoration: none;
 }
 
 .workout-section {
